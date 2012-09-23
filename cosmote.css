@@ -26,7 +26,7 @@ h1 {
 	left: 15px;
 	}
 #sidebar {
-	float: right;
+	float: left;
 	background-color: #5EC05E;
 	border-style: solid;
 	border-color: yellow;
