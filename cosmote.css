@@ -14,17 +14,18 @@
 	border-color: yellow;
 	width: 960;
 }
-label {
-	width: 100px;
+#order-form label {
+	width: 150px;
+	float: left;
 	color: #A72C2C;
 	font-style: italic;
 	padding-left: 10px;
 }
-h1 {
+#header h1 {
 	color: green;
 	top: 15px;
 	left: 15px;
-	}
+}
 #sidebar {
 	float: right;
 	background-color: #5EC05E;
