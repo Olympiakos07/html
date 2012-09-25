@@ -34,14 +34,14 @@
 	width: 400;
 }
 #image {
-	float: right;
+	float: left;
 }
 #header h1 {
 	text-align: left;
 	padding: 4px;
 	margin-right: 24px;
-	float: left;
-	padding-left: 10px;
+	float: right;
+	padding-right: 203px;
 }	
 #wrapper {
 	margin: 0 auto;
@@ -59,11 +59,25 @@
 	border-color: yellow;
 }
 #footer a {
-	color: black;
+	color: #111AE2;
 	margin: 0 auto;
-	padding-left: 10px; 
+	padding-right: 442px; 
+	float: right;
+	padding-top: 15px;
 }
 #order-form .subtitle {
 	display: block;
 	width: 100%;
 }	
+#order-form .centre {
+	width: 120px;
+}
+#viografiko {
+	padding-left: 130px;
+}
+#sidebar .vio {
+	padding-left: 20px;
+}
+#sidebar textarea {
+	padding-left: 20px;
+}
