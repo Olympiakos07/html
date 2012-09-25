@@ -78,3 +78,9 @@
 #sidebar .vio {
 	padding-left: 20px;
 }
+#order-form .field {
+	border: 2px solid red;
+}
+#sidebar .field {
+	border: 2px solid red;
+}
