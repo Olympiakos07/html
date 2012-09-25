@@ -63,3 +63,7 @@
 	margin: 0 auto;
 	padding-left: 10px; 
 }
+#order-form .subtitle {
+	display: block;
+	width: 100%;
+}	
