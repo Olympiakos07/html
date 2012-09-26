@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<!-- Mimic Internet Explorer edge -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	
+	<link rel="stylesheet" type="text/css" href="../css/base/jquery.ui.all.css" media="all" /> <!-- specific -->
+	<link rel="stylesheet" type="text/css" href="../css/css.css" media="all" />
+	<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="../css/ie.css" media="all" /><![endif]-->
+	<!--[if IE]><link rel="stylesheet" type="text/css" href="../css/ie-menu.css" media="all" /><![endif]-->
+	<!--[if IE]><link rel="stylesheet" type="text/css" href="../css/ie-menu.css" media="all" /><![endif]-->
+	<link  rel="stylesheet" type="text/css" href="../css/prettyPhoto.css" /> <!-- specific -->
+
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../js/underscore.js"></script>
+	<script type="text/javascript" src="../js/backbone.js"></script>
+	<script type="text/javascript" src="../js/error-messages/create-direct-debit-error-messages.js"></script><!-- specific -->
+	<script type="text/javascript" src="../js/settings.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+	<script type="text/javascript" src="../js/plugins/jquery.prettyPhoto.js"></script><!-- specific -->
+	<script type="text/javascript" src="../js/create-direct-debit.js"></script> <!-- specific -->
+	
+	<title>Raiffeisen Bank - Create Direct Debit</title>
+</head>
+
+<body>
+
+<div id="outer">
+<div id="header">
+ 
+	<div class="container">
+		
+		<div id="logo">
+			<a href="#"><img src="../img/logo.png" width="150" height="40" alt="Raiffeisen Bank" /></a>
+		</div>
+		
+		<div id="user">Welcome John Doe</div>
+		
+		<ul id="top-menu">
+			<li><a href="#"><strong>Inbox</strong> 23 new messages</a></li>
+			<li><a href="#"><strong>Help</strong> User Guide &amp; FAQ</a></li>
+			<li><a href="#"><strong>Logout</strong> <span class="soon transparent">300 remaining</span></a></li>
+		</ul>
+		
+	</div>	
+
+</div><!-- end header -->
+
+<div id="wrapper" class="container">
+	
+	<div id="masthead">
+		<h1>Direct Debits</h1>
+	</div>
+	
+	<div id="content" class="clr">
+		
+		<div id="side">
+				
+			<ul id="menu">
+				<li class="dashboard">
+					<a href="#"><span>dashboard icon</span> Dashboard</a>
+				</li>
+				<li class="mymoney">
+					<a href="#"><span>mymoney icon</span> My Money</a>
+					<ul class="submenu">
+						<li><a href="#"><span>icon</span> Menu option #1</a></li>
+						<li><a href="#"><span>icon</span> Menu option #2</a></li>
+						<li><a href="#"><span>icon</span> Menu option #3</a></li>
+						<li><a href="#"><span>icon</span> Menu option #4</a></li>
+						<li><a href="#"><span>icon</span> Menu option #5</a></li>
+					</ul>
+				</li>
+				<li class="payments active">
+					<a href="#"><span>transfer icon</span> Transfer &amp; Payments</a>
+					
+					<ul class="submenu">
+						<li><a href="#"><span>icon</span> Menu option #1</a></li>
+						<li><a href="#"><span>icon</span> Menu option #2</a></li>
+						<li class="active"><a href="#"><span>icon</span> Menu option #3</a></li>
+						<li><a href="#"><span>icon</span> Menu option #4</a></li>
+						<li><a href="#"><span>icon</span> Menu option #5</a></li>
+					</ul>
+				</li>
+				<li class="automatic">
+					<a href="#"><span>automatic icon</span> Automatic Payment</a>
+					<ul class="submenu">
+						<li><a href="#"><span>icon</span> Menu option #1</a></li>
+						<li><a href="#"><span>icon</span> Menu option #2</a></li>
+						<li><a href="#"><span>icon</span> Menu option #3</a></li>
+						<li><a href="#"><span>icon</span> Menu option #4</a></li>
+						<li><a href="#"><span>icon</span> Menu option #5</a></li>
+					</ul>
+				</li>
+				<li class="investments">
+					<a href="#"><span>investments icon</span> Investments</a>
+					<ul class="submenu">
+						<li><a href="#"><span>icon</span> Menu option #1</a></li>
+						<li><a href="#"><span>icon</span> Menu option #2</a></li>
+						<li><a href="#"><span>icon</span> Menu option #3</a></li>
+						<li><a href="#"><span>icon</span> Menu option #4</a></li>
+						<li><a href="#"><span>icon</span> Menu option #5</a></li>
+					</ul>
+				</li>
+				<li class="client">
+					<a href="#"><span>client services icon</span> Client Services</a>
+					<ul class="submenu">
+						<li><a href="#"><span>icon</span> Menu option #1</a></li>
+						<li><a href="#"><span>icon</span> Menu option #2</a></li>
+						<li><a href="#"><span>icon</span> Menu option #3</a></li>
+						<li><a href="#"><span>icon</span> Menu option #4</a></li>
+						<li><a href="#"><span>icon</span> Menu option #5</a></li>
+					</ul>
+				</li>
+			</ul>
+			
+		</div><!-- end side -->
+		
+		<div id="main">
+			
+			<div class="form-header">
+				<h2>Create Direct Debit</h2>
+				<input type="reset" value="Reset Form" class="button reset" />
+			</div>
+			
+			<form action="#" class="form" id="create-direct-debit">
+								
+				<fieldset id="step-1" class="step active">
+					<span class="no">1</span>
+					
+					<div class="content">
+						<div class="label">							
+							<label>Utility Company</label> 
+						</div>
+						
+						<div class="fields">
+							<ul id="utility-company-list" class="list parties long save-state" tabIndex="2">
+								<li id="utility-company-none" class="filter non-selectable">
+									<label>Filter your choices by inputing text</label>
+									<input type="text" class="input-filter field" tabIndex="1" />
+									<button type="button" class="clear-filter">Clear Filter</button>
+								</li>
+								<li id="utility-company-0" class="utility-company single-line selected">
+									<a href="javascript:void(0);">Vodafone Mobil phone bill</a>
+									<span class="hidden hidden-value">0111</span>
+								</li>
+								<li id="utility-company-1" class="utility-company single-line">
+									<a href="javascript:void(0);">IFN FINGROUP credit card installmentBME</a>
+								</li>
+								<li id="utility-company-2" class="utility-company single-line">
+									<a href="javascript:void(0);">Vodafone Mobil phone bill</a>
+								</li>
+								<li id="utility-company-3" class="utility-company single-line">
+									<a href="javascript:void(0);">IFN FINGROUP credit card installmentBME</a>
+								</li>
+								<li id="utility-company-4" class="utility-company single-line">
+									<a href="javascript:void(0);">Vodafone Mobil phone vodafone Mobile one</a>
+								</li>
+								<li id="utility-company-5" class="utility-company single-line">
+									<a href="javascript:void(0);">IFN FINGROUP credit card installmentBME</a>
+								</li>
+								<li id="utility-company-3" class="utility-company single-line">
+									<a href="javascript:void(0);">IFN FINGROUP credit card installmentBME</a>
+								</li>
+								<li id="utility-company-4" class="utility-company single-line">
+									<a href="javascript:void(0);">Vodafone Mobil phone vodafone Mobile one</a>
+								</li>
+								<li id="utility-company-5" class="utility-company single-line">
+									<a href="javascript:void(0);">IFN FINGROUP credit card installmentBME</a>
+								</li>
+								<li class="utility-company single-line">
+									<a href="javascript:void(0);">IFN FINGROUP credit card installmentBME</a>
+								</li>
+								<li class="utility-company single-line">
+									<a href="javascript:void(0);">Vodafone Mobil phone vodafone Mobile one</a>
+								</li>
+								<li class="utility-company single-line">
+									<a href="javascript:void(0);">IFN FINGROUP credit card installmentBME</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</fieldset>
+				
+				<fieldset id="step-2" class="step">
+					<span class="no">2</span>
+					
+					<div class="content">
+						<div class="label">From Account</div>
+						
+						<div class="fields">
+							<ul id="from-account-list" class="list accounts save-state" tabindex="3">
+								<li class="current currency-RON">
+									<a href="javascript:void(0);">My Salary <span>(10953875)</span></a>
+									<span class="total neg">- RON 80.13</span>
+								</li>
+								<li class="current currency-USD">
+									<a href="javascript:void(0);">84762587</a>
+									<span class="total">USD 300,000.00</span>
+								</li>
+								<li class="savings currency-EUR">
+									<a href="javascript:void(0);">Home Savings <span>(10985287)</span></a>
+									<span class="total">EUR 4,125.37</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+	
+				</fieldset>
+				
+				<fieldset id="step-3" class="step">
+					<span class="no">3</span>
+					<div class="content">
+						<div class="label">
+							<label>Third-party Bill</label>
+						</div>
+						
+						<div class="fields text">
+							<input type="checkbox" id="third-party" class="save-state" tabindex="4" />
+							<label for="third-party">The bill is not issued on my name</label>
+						</div>
+						
+						<div id="third-party-name-label-container" class="label sep hidden save-visibility">
+							<label>Third-party Name</label>
+						</div>
+						<div id="third-party-name-container" class="fields sep hidden save-visibility">
+							<input type="text" id="third-party-name" class="field alphabetic-validated save-state" maxlength="30" tabindex="5"/>
+						</div>						
+							
+					</div>
+				</fieldset>
+				
+				<fieldset id="step-4" class="step">
+					<span class="no">4</span>
+					<div id="utility-company-fields-none" class="content utility-company-fields hidden save-visibility">
+						<div class="fields">
+							<strong>Please select a utility company!</strong>
+						</div>
+					</div>
+					<div id="utility-company-fields-0" class="content utility-company-fields save-visibility">
+						<div class="label"><label>CONT CLIENT(CONFORM FACTURA)Love ANOTHERBIGWORD</label></div>
+						<div class="fields">
+							<input type="text" name="idField1" id="utility-company-0-field-1" class="field save-state" maxlength="15" tabindex="6" />
+						</div>
+						<div class="label"><label>asdasdsadadadadsadsadsdaddadad</label></div>
+						<div class="fields">
+							<input type="text" name="idField2" id="utility-company-0-field-2" class="field save-state" maxlength="20" tabindex="7"/>
+						</div>
+						<div class="label hidden"><label>Phone Numberdf sfg</label></div>
+						<div class="fields hidden">
+							<input type="text" name="idField3" id="utility-company-0-field-3" class="field save-state" maxlength="20" tabindex="8"/>
+						</div>
+					</div>
+					<div id="utility-company-fields-1" class="content utility-company-fields hidden save-visibility">
+						<div class="label"><label>COD FACTURARE</label></div>
+						<div class="fields">
+							<input type="text" name="idField1" id="utility-company-1-field-0" class="field save-state" maxlength="15" tabindex="6" />
+						</div>
+						<div class="label"><label>NR.TELEPHON(EX.0264123456)</label></div>
+						<div class="fields">
+							<input type="text" name="idField2" id="utility-company-1-field-2" class="field save-state" maxlength="20" tabindex="7"/>
+						</div>
+						<div class="label"><label>ID Number</label></div>
+						<div class="fields">
+							<input type="text" name="idField3" id="utility-company-1-field-3" class="field save-state" maxlength="20" tabindex="8"/>
+						</div>
+					</div>
+					<div id="utility-company-fields-2" class="content utility-company-fields hidden save-visibility">
+						<div class="label"><label>ASDASDADSADADADADADADASDADSA</label></div>
+						<div class="fields">
+							<input type="text" name="idField1" id="utility-company-2-field-1" class="field save-state" maxlength="15" tabindex="6" />
+						</div>
+						<div class="label"><label>Phone Number is big and ugly</label></div>
+						<div class="fields">
+							<input type="text" name="idField2" id="utility-company-2-field-2" class="field save-state" maxlength="20" tabindex="7"/>
+						</div>
+						<div class="label hidden"><label>Phone Number</label></div>
+						<div class="fields hidden">
+							<input type="text" name="idField3" id="utility-company-2-field-3" class="field save-state" maxlength="20" tabindex="8"/>
+						</div>
+					</div>
+					<div id="utility-company-fields-3" class="content utility-company-fields hidden save-visibility">
+						<div class="label"><label>Client code</label></div>
+						<div class="fields">
+							<input type="text" name="idField1" id="utility-company-3-field-1" class="field save-state" maxlength="15" tabindex="6" />
+						</div>
+						<div class="label"><label>Phone Number</label></div>
+						<div class="fields">
+							<input type="text" name="idField2" id="utility-company-3-field-2" class="field save-state" maxlength="20" tabindex="7"/>
+						</div>
+						<div class="label"><label>ID Number</label></div>
+						<div class="fields">
+							<input type="text" name="idField3" id="utility-company-3-field-3" class="field save-state" maxlength="20" tabindex="8"/>
+						</div>
+					</div>
+					<div id="utility-company-fields-4" class="content utility-company-fields hidden save-visibility">
+						<div class="label"><label>Client code</label></div>
+						<div class="fields">
+							<input type="text" name="idField1" id="utility-company-4-field-1" class="field save-state" maxlength="15" tabindex="6" />
+						</div>
+						<div class="label"><label>Phone Number</label></div>
+						<div class="fields">
+							<input type="text" name="idField2" id="utility-company-4-field-2" class="field save-state" maxlength="20" tabindex="7"/>
+						</div>
+						<div class="label hidden"><label>Phone Number</label></div>
+						<div class="fields hidden">
+							<input type="text" name="idField3" id="utility-company-4-field-3" class="field save-state" maxlength="20" tabindex="8"/>
+						</div>
+					</div>
+					<div id="utility-company-fields-5" class="content utility-company-fields hidden save-visibility">
+						<div class="label"><label>Comertului</label></div>
+						<div class="fields">
+							<input type="text" name="idField1" id="utility-company-5-field-1" class="field save-state" maxlength="15" tabindex="6" />
+						</div>
+						<div class="label"><label>NR.CONTRACT SAU NR.CERERE</label></div>
+						<div class="fields">
+							<input type="text" name="idField2" id="utility-company-5-field-2" class="field save-state" maxlength="20" tabindex="7"/>
+						</div>
+						<div class="label"><label>DATA SCAD./NUMAR</label></div>
+						<div class="fields">
+							<input type="text" name="idField3" id="utility-company-5-field-3" class="field save-state" maxlength="20" tabindex="8"/>
+						</div>
+						<div class="label"><label>NR.CONTRACT SAU NR.CERERE</label></div>
+						<div class="fields">
+							<input type="text" name="idField2" id="utility-company-5-field-2" class="field save-state" maxlength="20" tabindex="7"/>
+						</div>
+					</div>
+				</fieldset>
+				
+				<fieldset id="step-5" class="step amount-step">
+					<span class="no">5</span>
+					<div class="content">
+						<div class="label">
+							<label>Limit per payment</label>
+						</div>
+						<div class="fields">
+							<input type="text" class="amount-validated field format-amount save-state custom-validation" value="" id="amount-textfield" tabindex="9" />
+							<div class="helper">
+								<p>
+								<input type="checkbox" id="apply-maximum-limit" class="save-state" tabindex="10" />
+								<label for="apply-maximum-limit">Apply maximum limit: RON <span class="max-amount">1,500.00</span></label>
+								</p>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+				
+				<fieldset id="step-6" class="step">
+					<span class="no">6</span>
+					<div class="content">
+						<div class="label">
+							<label>Start Date</label>
+						</div>
+						
+						<div class="fields">
+							<input type="text" id="start-date" class="field field-small datepicker all-dates single-date save-state" readonly="readonly" tabindex="11" />
+						</div>						
+					</div>
+				</fieldset>
+								
+				<fieldset class="buttons">
+					
+					<div class="checkboxes left">
+						<div>
+							<input type="checkbox" id="terms-checkbox" class="checkbox-with-dialog" /> <label for="terms-checkbox">I agree with the terms of use</label>
+							<ul id="terms-dialog" class="is-tooltip dsq-dialog">
+								<li>
+									<p>Please review terms and conditions of the Direct Debit - ConfortaBill service.</p>
+								</li>
+								<li>
+									<p class="link"><a href="javascript:void(0);">ConfortaBill Terms &amp; Conditions</a></p> 
+									<p class="link external"><a href="javascript:void(0);">Bank Marketing Site</a></p>
+								</li>
+								<li class="last">
+									<a href="javascript:void(0);" class="button close-parent-dialog">Agree</a>
+								</li>
+							</ul>
+						</div>
+					</div> <!-- close checkboxes -->
+
+					<input type="hidden" name="utilityCompanyId1" />
+					<input type="hidden" name="utilityCompanyId2" />
+					<input type="hidden" name="StartDate" />
+					<input type="hidden" name="transactionAmount" />
+					<input type="hidden" name="thirdPartyName" />
+					<input type="hidden" name="restoredState" />
+
+					<input type="submit" class="button right" value="Create Direct Debit" tabindex="12" />
+				</fieldset>
+				
+			</form>
+			
+		</div><!-- end main -->
+		
+	</div><!-- end content -->
+	
+	<div id="footer" class="clr">
+	
+		<div>
+			<h6>Help</h6>
+			<ul>
+				<li><a href="#">Take the tour</a></li>
+				<li><a href="#">User Guide</a></li>
+				<li><a href="#">Client Services</a></li>
+				<li><a href="#">Frequently Asked Questions</a></li>
+			</ul>
+		</div>
+		
+		<div>
+			<h6>Legal</h6>
+			<ul>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Terms &amp; Conditions</a></li>
+			</ul>
+		</div>
+		
+		<div class="support">
+			<h6>Client support</h6>
+			<p><strong>021-306 55 55 &nbsp;&middot;&nbsp; 021-306 55 56</strong></p>
+			<p>Or send an e-mail to <a href="#">online@raiffeisen.ro</a></p>
+		</div>
+		
+		<p id="disclaimer" class="clr">
+			<span class="left">&copy; 2011 Raiffeisen Bank</span>
+			<span class="right">All rights reserved.</span>
+		</p>
+	</div>
+	
+</div><!-- end wrapper -->
+
+</div><!-- end outer -->
+<div class="dialog-message full-modal hidden">
+	test
+</div>
+</body>
+
+</html>

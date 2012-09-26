@@ -1,0 +1,251 @@
+#outer					{ overflow: visible; }
+.form .buttons			{ width: 100%; }
+*+html .form span.no	{ display: block; height: 100%; }
+
+.button.grey			{ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#666666',GradientType=0 ); }
+.button.grey:hover		{ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7b7b7b', endColorstr='#7b7b7b',GradientType=0 ); }
+
+.transactions th,
+.transactions td	{ vertical-align: top; }
+#direct-debits .transactions td { vertical-align: middle; }
+.transactions tfoot .downloads input,
+.transactions tfoot .buttons input 		{ vertical-align: middle; }
+
+.parties li a span.sub	{
+	display: block;
+	font-size: 11px;
+	font-style: italic;
+	color: #999;
+	margin-top: 3px;
+}
+
+#account-details 		{ width: 469px; }
+#account-header .right	{ margin: 0; }
+
+#manage-templates-list li .actions 					{ text-align: right; }
+#manage-templates-list li .actions .enable-mobile 	{ font-size: 0; vertical-align: top; }
+
+.table-filters input[type="submit"]		{ margin-top: 7px; }
+
+/* IE7 doesn't like inline-block on block elements */
+*+html #balance ul,
+*+html .form .helper,
+*+html .types		{ display: inline; }
+
+/* IE7 button fix */
+*+html .button	{ 
+	overflow: visible; 
+	width: auto; 
+}
+
+*+html #manage-recipients .parties,
+*+html #manage-templates .parties	{
+	position: relative;
+}
+
+/* IE7 form fixes */
+*+html .form .label				{ z-index: 1; }
+*+html .form .label.sep			{ clear: both; }
+*+html .form .checkboxes div 	{ z-index: 1000; }
+*+html .dsq-dialog.is-dropdown li.selected span:first-child 	{ padding-left: 15px; }
+*+html .form .fields.text	{ margin-top: 21px; }
+
+*+html .parties				{ position: relative; }
+*+html .parties li			{ overflow: hidden; }
+*+html .parties li a 		{ float: left; }
+*+html .parties li a 		{ display: block !important; }
+
+*+html .parties li .actions	{ 
+	position: static; 
+	float: right; 
+	margin: 7px 5px 0 0;
+}
+
+*+html .form fieldset.active td:first-child	{
+	background: #5c5c5c !important;
+}
+
+/* by Achilleas */
+#header {
+	border-bottom: #dad403 1px solid;
+}
+
+.form-header .button {
+	position: static;
+	margin-top: -21px;
+	float: right;	
+}
+
+#main {
+	border-top: #aaaaaa 1px solid;
+	border-right: #aaaaaa 1px solid;
+	border-bottom: #aaaaaa 1px solid;
+	width: 689px;
+	/*padding: 4px;*/
+	padding-bottom: 3px;
+}
+
+#side {
+	border-top: #cccccc 1px solid;
+	border-left: #cccccc 1px solid;
+	border-bottom: #cccccc 1px solid;
+	width: 257px;
+}
+
+#lang {
+	border: 1px solid #999999;
+}
+
+.form .button.small.disenroll {
+	top: 10px;
+	float: left;
+}
+
+/*.to-other-account #other-account{
+	position: relative;
+	top: 0;
+	left: -150px;
+}*/
+
+.has-filter {
+	position: relative;
+}
+
+.parties li .actions a.enable-mobile, #apply-for-all-container a.enable-mobile {
+	filter: alpha(opacity=20);
+}
+
+.parties li .actions a.enable-mobile:hover, #apply-for-all-container a.enable-mobile:hover {
+	filter: alpha(opacity=40);
+}
+
+.parties li.available-for-mobile .actions a.enable-mobile {
+	filter: alpha(opacity=100);
+}
+
+
+.ui-dialog.modal .ui-dialog-content		{ border: 1px solid #666; }
+.ui-dialog.modal .ui-dialog-titlebar	{ border: 1px solid #333; border-bottom: none; }
+
+/* IE7 explicit bugs */
+*+html #terms-dialog			{ width: 280px; left: -60px; }
+*+html #utility-company-list	{ max-height: 306px; }
+*+html .table-filters h2		{ position: relative; }
+*+html .table-filters .tools	{ float: none; text-align: right; position: absolute; top: 10px; right: 10px; }
+*+html .table-filters fieldset	{ position: relative; }
+*+html #show-all-filters,				
+*+html #show-transactions				{ float: left; margin-left: 3px; }
+
+*+html .transactions .status .icon,
+*+html .transactions .icon.channel,
+*+html #messages .icon				{ display: block !important; }
+*+html .transactions .icon.hidden	{ display: block; float: left; }
+*+html .transactions .actions		{ width: 2%; }
+*+html .transactions .type span		{ display: block; }
+*+html .form .checkboxes div.helper .is_checked.validation-error { top: 1px; } /* ie reset to normal css */
+*+html .form #step-4 .utility-company-fields { border-bottom: 1px; }
+
+*+html .form-header.selector-wrapper	{
+	position: relative;
+	z-index: 999;
+}
+*+html .form-header .selector			{ top: 10px; right: 10px; }
+*+html #clear-dates						{ display: block; }
+*+html #use-amount						{ display: block; margin-top: -9px !important; }
+*+html #modal-converter fieldset		{ overflow: hidden; }
+*+html .swift-charges-container			{margin-top: -24px !important;} 
+*+html #swift-priority-dialog			{margin-top: 5px !important;} 
+*+html #swift-charges-dialog			{margin-top: -4px !important;} 
+
+*+html #transactions-calendar	{ zoom: 1; }
+*+html #transactions-calendar div { z-index: 1; }
+*+html #transactions-calendar .date-transactions { z-index: 9999; width: 245px;  }
+*+html #transactions-calendar .date-transactions table { width: 100%; }
+
+*+html #manage-templates-list	{ overflow-x: hidden !important; }
+*+html #manage-templates-list.smart-mobile li.selected	{
+	zoom: 1;
+	filter: none;
+}
+
+*+html #filter-mobile-templates-container	{ float: none; }
+
+*+html #multi-sending-fields-container	{ zoom: 1; }
+
+
+*+html #show-statements			{ 
+	float: left; 
+	display: block;
+	margin-right: 5px; 
+}
+*+html #button-last_statement				{ display: block; float: left; margin-top: 7px; }
+*+html .account-statement-submits .fields	{ margin-left: 0 !important; }
+
+*+html #offers-list.state-by-ajax			{ display: block; float: left; }
+
+/* specify explicit widths for problematic dropdowns in IE */
+/* IE hates width: auto, see http://stackoverflow.com/a/5173710 */
+*+html #recipient-choice-dialog			{ width: 190px; }
+*+html #available-for-mobile,			
+*+html #select-status,
+*+html #select-importance,
+*+html #transaction-planner-dialog		{ width: 150px; }
+*+html #swift-priority-dialog,
+*+html #swift-charges-dialog,
+*+html #select-beneficiary-search-type,
+*+html #select-channel,
+*+html #select-transaction-type,
+*+html #select-read-status,
+*+html #recurring-duration-dialog		{ width: 100px; }
+
+body#smart-mobile-nicknames {
+	-ms-overflow-x: visible;
+}
+
+#side {
+	border-right: 1px solid #CCCCCC !important;
+}
+
+.dsq-dialog.is-dropdown li.selected span:before {
+	font-family: "Arial Unicode MS", "Lucida Sans Unicode";
+}
+
+/* account calendar popoup background */
+.date-transactions {
+	background: #FFFFFF;
+}
+/*.transactions .date-transactions th, .general-table .date-transactions th {
+	position: relative;
+	top: 10px;
+}*/
+.ui-datepicker {
+	background: #FFFFFF;
+	z-index: 100000 !important;
+}
+
+.qMarkClass img {
+	filter: none;
+}
+
+.data td.ram-online-info-text {
+	width: 400px;
+}
+
+.is-tooltip {
+	z-index: 100000 !important;
+}
+.utility-company-fields label {
+	z-index: 99999 !important;
+}
+#third-party-name-label-container, #third-party-name-container {
+	z-index: 10 !important;
+}
+.date-transactions {
+	z-index: 100000 !important;
+}
+form#create-direct-debit .label {
+	position: static;
+}
+#manage-templates-list.medium {
+	min-height: 360px;
+}

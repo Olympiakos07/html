@@ -1,0 +1,1 @@
+var wide_modal = true;

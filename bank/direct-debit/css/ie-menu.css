@@ -1,0 +1,26 @@
+/* menu fixes */ 
+#menu li				{ 
+	border-top: 1px solid #7a7a7a;
+	border-bottom: 1px solid #474747; 
+}
+#menu li a		{ 
+	overflow: hidden; 
+	position: relative; 
+	padding-left: 55px; 
+}
+#menu li a span	{ position: absolute; top: 12px; left: 10px; } 
+#menu .submenu li a	{ padding-left: 20px; }
+#menu .submenu li a span	{ position: static; }
+#menu li a:hover	{ background: #444; }
+#menu .submenu	{ 
+	overflow: hidden; 
+	width: 249px; 
+}
+
+.form .checkboxes div.helper .is_checked.validation-error {
+	top: 18px;
+}
+
+#step-4 .utility-company-fields {
+	border-bottom: 0;
+}
