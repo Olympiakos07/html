@@ -5,6 +5,7 @@
 	padding-left: 10px;
 	border-style: solid;
 	border-color: yellow;
+	background: -webkit-linear-gradient(top,  #325532 0%, #599159 50%,#5D9B5D 50%,#276B27 100%); /* Chrome10+,Safari5.1+ */
 }
 #header {
 	background-color: #9AD663;
@@ -13,7 +14,8 @@
 	border-style: solid;
 	border-color: yellow;
 	width: 960;
-}
+	background: -webkit-linear-gradient(top,  #000000 0%,#C6FF90 50%,#1F221C 50%,#A8EE65 100%); /* Chrome10+,Safari5.1+ */
+}	
 #order-form label {
 	width: 150px;
 	float: left;
@@ -32,6 +34,7 @@
 	border-style: solid;
 	border-color: yellow;
 	width: 400;
+	background: -webkit-linear-gradient(top,  #000000 0%,#C6FF90 50%,#6773FD 50%,#3C8344 100%); /* Chrome10+,Safari5.1+ */
 }
 #image {
 	float: left;
@@ -49,7 +52,7 @@
 }
 #footer {
 	background-color: #9AD663;
-	color: blue;
+	color: #FFE000;
 	font-style: italic;
 	font-weight: bold;
 	clear: both;
@@ -57,9 +60,10 @@
 	padding-left: 10px;
 	border-style: solid;
 	border-color: yellow;
+	background: -webkit-linear-gradient(top,  #110F0F 0%,#65C588 50%,#A0A5A3 50%,#455E47 100%); /* Chrome10+,Safari5.1+ */
 }
 #footer a {
-	color: #111AE2;
+	color: #CC0000;
 	margin: 0 auto;
 	padding-right: 442px; 
 	float: right;
@@ -80,7 +84,12 @@
 }
 #order-form .field {
 	border: 2px solid red;
+	cursor: pointer;
 }
 #sidebar .field {
 	border: 2px solid red;
+	cursor: pointer;
 }
+.picture {
+	cursor: pointer;
+}	
